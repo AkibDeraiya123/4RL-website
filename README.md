@@ -16,7 +16,7 @@ pnpm dev --host
 
 ## Tasks
 
-- [ ] Prod Environment
+- [x] Prod Environment
 - [ ] Tailwind setup
 - [ ] Homepage skeleton
 - [ ] Background images
