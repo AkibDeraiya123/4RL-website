@@ -1,7 +1,10 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../images/website_logo.svg";
-import Button from "../components/button.astro";
+import insta from "../images/Insta.png";
+import twitter from "../images/Twitter.png";
+import tiktok from "../images/Tiktok.png";
+import Button from "../components/Button.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -27,5 +30,19 @@ import Layout from "../layouts/Layout.astro";
       est laborum.
     </p>
     <Button title={"Join Our Discord"} />
-  </main>
-</Layout>
+    <section class="flex items-center gap-8">
+      <a
+        class="h-auto w-6 cursor-pointer transition-transform duration-150 hover:-translate-y-1"
+        ><Image src={insta} alt="Instagram" /></a
+      >
+      <a
+        class="h-auto w-6 cursor-pointer transition-transform duration-150 hover:-translate-y-1"
+        ><Image src={twitter} alt="Twitter" /></a
+      >
+      <a
+        class="h-auto w-6 cursor-pointer transition-transform duration-150 hover:-translate-y-1"
+        ><Image src={tiktok} alt="Tiktok" /></a
+      >
+    </section>
+  </main></Layout
+>
