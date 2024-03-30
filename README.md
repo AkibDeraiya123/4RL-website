@@ -17,7 +17,8 @@ pnpm dev --host
 ## Tasks
 
 - [x] Prod Environment
-- [ ] Tailwind setup
-- [ ] Homepage skeleton
+- [x] Tailwind setup
+- [x] Homepage skeleton
+- [x] Favicon
+- [ ] SEO
 - [ ] Background images
-- [ ] Favicon
