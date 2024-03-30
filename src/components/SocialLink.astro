@@ -1,0 +1,19 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+
+interface Props {
+  src: ImageMetadata;
+  url: string;
+  alt: string;
+}
+
+const { src, url, alt } = Astro.props;
+---
+
+<a
+  href={url}
+  target='_blank'
+  class='h-auto w-6 cursor-pointer transition-transform duration-150 hover:-translate-y-1'
+  ><Image src={src} alt={alt} /></a
+>
