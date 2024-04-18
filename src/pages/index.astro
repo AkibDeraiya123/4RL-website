@@ -1,27 +1,27 @@
 ---
-import { Image } from 'astro:assets';
-import Button from '../components/Button.astro';
-import SocialLink from '../components/SocialLink.astro';
-import insta from '../images/Insta.png';
-import tiktok from '../images/Tiktok.png';
-import twitter from '../images/Twitter.png';
-import logo from '../images/website_logo.svg';
-import Layout from '../layouts/Layout.astro';
+import { Image } from "astro:assets";
+import Button from "../components/Button.astro";
+import SocialLink from "../components/SocialLink.astro";
+import insta from "../images/Insta.png";
+import tiktok from "../images/Tiktok.png";
+import twitter from "../images/Twitter.png";
+import logo from "../images/website_logo.svg";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title='4RL | The Community App'>
-  <main class='flex w-full flex-col items-center gap-10 md:max-w-2xl'>
-    <header class='flex w-full flex-col items-center gap-4'>
+<Layout title="4RL | The Community App">
+  <main class="flex w-full flex-col items-center gap-10 md:max-w-2xl">
+    <header class="flex w-full flex-col items-center gap-4">
       <Image
         src={logo}
-        alt='4RL text with clover icon in map pin'
-        class='h-auto w-28 md:w-52'
+        alt="4RL text with clover icon in map pin"
+        class="h-auto w-28 md:w-52"
       />
-      <h2 class='text-lg font-extralight tracking-wider md:text-2xl'>
-        Journeys begin with chance encounters
+      <h2 class="text-lg font-extralight tracking-wider md:text-2xl">
+        Don&apos;t be a stranger
       </h2>
     </header>
-    <p class='text-sm font-thin md:text-base'>
+    <p class="text-sm font-thin md:text-base">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -30,19 +30,19 @@ import Layout from '../layouts/Layout.astro';
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
     </p>
-    <Button title={'Join Our Discord'} url='#' />
-    <section class='flex items-center gap-8'>
+    <Button title={"Join Our Discord"} url="#" />
+    <section class="flex items-center gap-8">
       <SocialLink
         src={insta}
-        alt='Instagram'
-        url='https://www.instagram.com/4rlapp'
+        alt="Instagram"
+        url="https://www.instagram.com/4rlapp"
       />
       <SocialLink
         src={twitter}
-        alt='Twitter'
-        url='https://twitter.com/4rlapp'
+        alt="Twitter"
+        url="https://twitter.com/4rlapp"
       />
-      <SocialLink src={tiktok} alt='Tiktok' url='#' />
+      <SocialLink src={tiktok} alt="Tiktok" url="#" />
     </section>
   </main></Layout
 >
