@@ -9,7 +9,7 @@ import logo from "../images/website_logo.svg";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="4RL | The Community App">
+<Layout title="4RL | The Community Toolkit">
   <main class="flex w-full flex-col items-center gap-10 md:max-w-2xl">
     <header class="flex w-full flex-col items-center gap-4">
       <Image
@@ -17,20 +17,31 @@ import Layout from "../layouts/Layout.astro";
         alt="4RL text with clover icon in map pin"
         class="h-auto w-28 md:w-52"
       />
-      <h2 class="text-lg font-extralight tracking-wider md:text-2xl">
+      <h2 class="text-lg font-light tracking-wider md:text-2xl">
         Don&apos;t be a stranger
       </h2>
     </header>
-    <p class="text-sm font-thin md:text-base">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
-    </p>
-    <Button title={"Join Our Discord"} url="#" />
+    <div class="text-sm font-extralight md:text-base space-y-2 pb-6">
+      <p class="italic font-extralight">[for-real] / n</p>
+      <div class="space-y-1">
+        <p>
+          An AI-powered toolkit connecting people, places and experiences to
+          empower every unique community:
+        </p>
+        <ul class="space-y-1">
+          <li>I. Promoting more serendipitous in person encounters.</li>
+          <li>
+            II. Recommending the right places and experiences to match the
+            moment.
+          </li>
+          <li>
+            III. Restoring the <span class="font-light">soul</span> of the city
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <Button title={"Join Our Discord"} url="https://discord.gg/qdMsx6apwg" />
     <section class="flex items-center gap-16">
       <SocialLink
         src={insta}
