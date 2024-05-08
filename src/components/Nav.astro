@@ -1,3 +1,8 @@
+---
+const currentPath = Astro.url.pathname;
+console.log(currentPath);
+---
+
 <div class="flex">
   <input type="checkbox" id="drawer-toggle" class="relative sr-only peer" />
   <label
@@ -27,8 +32,17 @@
     <div
       class="flex flex-col ml-7 md:ml-9 pt-20 text-3xl font-light tracking-wider gap-8"
     >
-      <a class="relative cursor-pointer">About</a>
-      <a class="relative cursor-pointer">Contact</a>
+      <a
+        href="/"
+        class={`relative cursor-pointer ${currentPath === "/" ? "underline-bar" : "underline-anim"}`}
+        >Home</a
+      >
+      <a
+        href="/about"
+        class={`relative cursor-pointer ${currentPath === "/about" ? "underline-bar" : "underline-anim"}`}
+        >Our Story</a
+      >
+      <a class="underline-anim relative cursor-pointer">Contact</a>
     </div>
   </div>
 </div>
@@ -47,7 +61,7 @@
   }
 
   /* Fade in */
-  a::after {
+  a.underline-anim::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -61,9 +75,20 @@
       transform 500ms;
   }
 
-  a:hover::after,
-  a:focus::after {
+  a.underline-anim:hover::after,
+  a.underline-anim:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
+  }
+
+  a.underline-bar::after {
+    content: "";
+    position: absolute;
+    bottom: -0.2em;
+    left: -0.5rem;
+    width: 100%;
+    height: 0.1em;
+    background-color: black;
+    opacity: 1;
   }
 </style>
