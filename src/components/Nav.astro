@@ -1,0 +1,69 @@
+<div class="flex">
+  <input type="checkbox" id="drawer-toggle" class="relative sr-only peer" />
+  <label
+    for="drawer-toggle"
+    class="absolute top-0 left-3 inline-block p-4 z-50"
+  >
+    <span class="sr-only">Toggle sidebar</span>
+    <div class="space-y-2">
+      <div
+        class="w-8 bg-black h-0.5 rounded-full transition ease-in-out duration-500"
+      >
+      </div>
+      <div
+        class="w-8 bg-black h-0.5 rounded-full transition ease-in-out duration-500"
+      >
+      </div>
+      <div
+        class="w-8 bg-black h-0.5 rounded-full transition ease-in-out duration-500"
+      >
+      </div>
+    </div>
+  </label>
+
+  <div
+    class="fixed top-0 left-0 z-20 w-64 h-full transition-all duration-500 transform -translate-x-full peer-checked:translate-x-0 md:bg-gray-300/25 bg-gray-300/80"
+  >
+    <div
+      class="flex flex-col ml-9 pt-20 text-3xl font-light tracking-wider gap-8"
+    >
+      <a class="relative cursor-pointer">About</a>
+      <a class="relative cursor-pointer">Contact</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  #drawer-toggle:checked + label > div > div:first-of-type {
+    transform: rotate(-35deg) translateY(0.75rem) translateX(0rem);
+  }
+  #drawer-toggle:checked + label > div > div:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  #drawer-toggle:checked + label > div > div:nth-of-type(3) {
+    /* Example transformation for the third div */
+    transform: rotate(35deg) translateY(-0.75rem);
+  }
+
+  /* Fade in */
+  a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -0.5rem;
+    width: 100%;
+    height: 0.1em;
+    background-color: black;
+    opacity: 0;
+    transition:
+      opacity 200ms,
+      transform 500ms;
+  }
+
+  a:hover::after,
+  a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+</style>
