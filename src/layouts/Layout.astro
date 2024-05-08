@@ -6,18 +6,40 @@ import Nav from "../components/Nav.astro";
 
 interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
+
+const defaultDescription =
+  description ??
+  "An AI-powered social toolkit connecting people, places and experiences. Promoting more serendipitous in person encounters. Recommending the right places and experiences to match the moment. Restoring the soul of the city";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <title>{title}</title>
+    <meta name="description" content={defaultDescription} />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://4rlapp.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="4RL | The Community Toolkit" />
+    <meta property="og:description" content={defaultDescription} />
+    <meta property="og:image" content="/OG.png" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="4rlapp.com" />
+    <meta property="twitter:url" content="https://4rlapp.com" />
+    <meta name="twitter:title" content="4RL | The Community Toolkit" />
+    <meta name="twitter:description" content={defaultDescription} />
+    <meta name="twitter:image" content="/OG.png" />
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -26,7 +48,6 @@ const { title } = Astro.props;
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
-    <title>{title}</title>
   </head>
   <body class="flex h-[100svh] w-screen px-4 font-sans noise">
     <Nav />
