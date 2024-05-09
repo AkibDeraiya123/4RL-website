@@ -49,9 +49,11 @@ const defaultDescription =
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
   </head>
-  <body class="flex h-[100svh] w-screen px-4 font-sans noise">
-    <Nav />
-    <div class="flex-col items-center justify-center w-full flex">
+  <body class="flex flex-col h-[100svh] w-screen px-4 font-sans noise">
+    <header class="py-6 w-full relative">
+      <Nav />
+    </header>
+    <div class="flex-col w-full flex flex-1">
       <slot />
     </div>
   </body>
