@@ -6,64 +6,85 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="4RL | Our Story">
   <main
-    class="flex lg:flex-row flex-col xl:justify-center w-full h-full py-6 gap-8"
+    class="flex h-full w-full flex-col gap-8 py-6 lg:flex-row xl:justify-center"
   >
     <section
-      class="w-full lg:w-1/3 xl:max-w-lg flex justify-center lg:block lg:pt-12"
+      class="flex w-full justify-center lg:block lg:w-1/3 lg:pt-12 xl:max-w-lg"
     >
       <figure>
         <div
-          class="bg-white/45 p-1 w-full max-w-lg min-h-72 shadow-black shadow-md flex justify-center items-center text-gray-300"
+          class="flex min-h-72 w-full max-w-lg items-center justify-center bg-white/45 p-1 text-gray-300 shadow-md shadow-black"
         >
           <Image
             src={aboutPhoto}
             alt="Photo of Kareem on the left and Roze on the right, founders of 4RL"
           />
         </div>
-        <figcaption class="text-sm py-2 font-light text-center text-gray-500">
+        <figcaption class="py-2 text-center text-sm font-light text-gray-500">
           Kareem (left) and Roze (right) at Union Market, Washington D.C.
         </figcaption>
       </figure>
     </section>
     <section
-      class="w-full lg:w-2/3 xl:w-1/2 xl:max-w-xl flex justify-center lg:block"
+      class="flex h-full w-full justify-center lg:block lg:w-2/3 xl:w-1/2 xl:max-w-xl"
     >
-      <div
-        class="bg-gray-200/25 py-6 px-1 w-full min-h-fit shadow-gray-400 shadow-md font-light lg:text-lg"
-      >
+      <div class="w-full font-light lg:text-lg">
         <div class="space-y-3">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum
-            varius duis at consectetur lorem donec massa sapien. Morbi non arcu
-            risus quis varius quam quisque. Habitasse platea dictumst quisque
-            sagittis purus sit. Urna nec tincidunt praesent semper feugiat nibh
-            sed pulvinar proin. Ullamcorper a lacus vestibulum sed arcu non
-            odio. Fames ac turpis egestas integer eget aliquet nibh praesent
-            tristique. Laoreet sit amet cursus sit amet. Urna condimentum mattis
-            pellentesque id nibh tortor. Mauris nunc congue nisi vitae suscipit
-            tellus mauris. Ornare lectus sit amet est placerat in egestas erat
-            imperdiet. Tempor nec feugiat nisl pretium. Blandit massa enim nec
-            dui nunc. Nisl rhoncus mattis rhoncus urna neque viverra. Viverra
-            vitae congue eu consequat ac. Ullamcorper eget nulla facilisi etiam.
-            Dapibus ultrices in iaculis nunc sed. Sed velit dignissim sodales ut
-            eu sem integer. Pretium fusce id velit ut tortor pretium viverra
-            suspendisse potenti.
-          </p>
-          <p>
-            Praesent semper feugiat nibh sed. Eget mi proin sed libero enim sed
-            faucibus. Malesuada nunc vel risus commodo viverra maecenas accumsan
-            lacus. Venenatis tellus in metus vulputate eu scelerisque felis. Id
-            volutpat lacus laoreet non curabitur. A lacus vestibulum sed arcu
-            non. Ac tortor vitae purus faucibus ornare. Id venenatis a
-            condimentum vitae sapien pellentesque. Nullam ac tortor vitae purus.
-            Lorem sed risus ultricies tristique nulla aliquet enim tortor at.
-            Etiam tempor orci eu lobortis elementum nibh tellus molestie nunc.
-            Cursus sit amet dictum sit amet justo donec enim diam. Lectus urna
-            duis convallis convallis tellus id.
-          </p>
+          <div class="">
+            <h1 class="text-2xl">Our Story</h1>
+            <hr class="h-1 bg-[#4c4c4c]" />
+          </div>
+          <div class="space-y-3">
+            <p>
+              <b class="font-medium">
+                Have you ever stopped to really observe what happens when people
+                meet?
+              </b> In a matter of seconds, our brains fire millions of synapses.
+              Whether it's reconnecting with an old friend, recognizing a familiar
+              face in your daily routine, or meeting someone new, something special
+              happens.
+            </p>
+            <p>
+              We’re betting on this magic — the magic of meaningful in-person
+              connections, the communities where they occur, and the experiences
+              that surround them.
+            </p>
+            <p>
+              So, what exactly is 4RL? Rather than confining it to a single
+              definition, we call it the “community toolkit.” We want you to use
+              its tools to create the neighborhood vibe you wish to be part of —
+              we’re merely stewards here to help. Our vision is of thriving
+              third places — your local cafes, libraries, bars, malls, parks,
+              etc. — and our goal is to open new pathways to connection in these
+              places.
+            </p>
+            <p>
+              Why do we care? Because we know how it feels to be lonely in a
+              city full of people and how hard it can be to put yourself out
+              there. For Kareem, the vision for 4RL began in Okinawa, Japan
+              where he fell in love with the culture of a deeply connected
+              community of islanders who regularly celebrated ancient traditions
+              and curated spaces for neighborhoods to come together. After
+              returning to DC, Kareem constantly sought this sense of community
+              but rarely found it. Becoming deeply dissatisfied with using
+              dating and networking apps to try to meet new people, Kareem
+              became determined to create an alternative for those who live for
+              authentic human connections. For Roze, the frustration stemmed
+              from how technology was being used to divide and isolate people.
+              As an immigrant, Roze experienced firsthand the power of community
+              building to foster a sense of belonging, knowing how much it
+              helped them. So, they started hacking together prototypes of how
+              tech could facilitate this.
+            </p>
+            <p>
+              When the two of us met, we realized that together we had a unique
+              opportunity to solve a problem we both felt so passionately about.
+              While we are starting in DC, we know that what we’re building will
+              create the blueprint for community transformation everywhere.
+            </p>
+          </div>
         </div>
-        <p class="italic pt-12 text-right px-3">&horbar; Kareem & Roze</p>
+        <p class="pt-2 text-right italic lg:pt-4">&horbar; Kareem & Roze</p>
       </div>
     </section>
   </main>
