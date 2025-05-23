@@ -1,14 +1,300 @@
 ---
 import { Image } from "astro:assets";
-import aboutPhoto from "../images/about.png";
 import Layout from "../layouts/Layout.astro";
+import logo from "../images/4rl_logo.png";
 ---
 
-<Layout title="4RL | Our Story">
-  <main
-    class="flex h-full w-full py-6"
-  >
-    <div>Privacy Policy</div>
-    
+<Layout title="4RL | Privacy Policy">
+  <!-- <main class="flex h-full w-full py-6"> -->
+  <main class="flex h-full w-full flex-col items-center justify-center gap-10">
+    <div class="px-6">
+      <header class="flex w-full flex-col items-center gap-4">
+        <Image
+          src={logo}
+          alt="4RL text with clover icon in map pin"
+          class="h-auto w-28 md:w-52"
+        />
+        <h2 class="text-lg font-bold tracking-wider md:text-2xl">
+          4RL Privacy Policy
+        </h2>
+      </header>
+      <div class="m-4 space-y-3 p-7 pb-6 text-sm font-extralight md:text-base">
+        <div><span class="font-medium">LAST UPDATED:</span> April 16, 2025</div>
+        <div>
+          <div class="font-medium">INTRODUCTION</div>
+          <p>
+            Welcome to 4RL LLC Privacy Policy (“Policy”). The Policy outlines
+            how we collect, store, protect, and share your information, and with
+            whom we share it. While you are using the 4RL LLC web or mobile apps
+            (the “App”, “4RL”), or affiliated services, we collect certain
+            information about you and may choose to use that information to
+            share with other users.
+          </p>
+        </div>
+
+        <div>
+          <div class="font-medium">INFORMATION WE COLLECT</div>
+          <div>
+            <div class="py-2 italic underline">
+              Information We Collect Automatically
+            </div>
+            <p class="py-2">
+              When you use 4RL, we automatically collect certain information
+              related to your computer or mobile device and activities
+              including:
+            </p>
+            <p class="py-2">
+              <p>
+                Device Information/Specifications: We may collect information
+                about your device including mobile device unique ID number,
+                device model, operating system, and MAC address
+              </p>
+              <p>
+                Usage Information: The manner in which you use the Service and
+                its individual components and features
+              </p>
+              <p>
+                Cookies: While we do not currently collect cookies, we reserve
+                the right to do so in the future for purposes of improving the
+                4RL app experience
+              </p>
+              <p>
+                Geolocation Information: With your permission granted, we
+                collect your mobile device’s location via inbuilt technologies
+                including GPS, Bluetooth, and other hardware and software within
+                your device Registration Information
+              </p>
+            </p>
+            <p class="py-2">
+              When you Create an account (“Account”), we may collect certain
+              information about you (“Registration Information”) including:
+            </p>
+            <ul style="list-style-type:disc;" class="mx-6 py-2">
+              <li>Phone Number</li>
+              <li>Email</li>
+              <li>First Name</li>
+              <li>Last Name</li>
+              <li>Date of Birth</li>
+              <li>Gender</li>
+              <li>Sexual Orientation</li>
+              <li>Sexual Preference</li>
+              <li>Education</li>
+              <li>Occupation</li>
+              <li>Photographs</li>
+            </ul>
+            <p class="py-2">
+              After creating an Account, you will be able to review and edit
+              certain information in the Settings and Edit Profile section of
+              the App Please note that the personal information we collect helps
+              to improve the App and ensure the authenticity of all user
+              profiles.
+            </p>
+          </div>
+
+          <div>
+            <div class="py-2 italic underline">
+              Information Collected from Friends/Other Users
+            </div>
+            <p class="py-2">
+              We may collect information such as email addresses and phone
+              numbers that you supply in accordance with referrals to friends.
+              You agree that you will not abuse the referral feature by sending
+              referrals to individuals who you do not believe will be interested
+              in the Service In certain circumstances, users of 4RL may also
+              provide us with information about you in cases dealing with
+              customer support inquiries or concerns on breach of Terms or
+              Policy more generally.
+            </p>
+          </div>
+
+          <div>
+            <div class="py-2 italic underline">Additional Information</div>
+            <p class="py-2">
+              By providing your phone number, you agree to receive SMS messages
+              with one-time security codes for account creation and
+              authentication as well as periodic notifications related to your
+              activity on the App. We may at times request information in the
+              form of online surveys to better the Service.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="font-medium">USE OF INFORMATION</div>
+
+          <div>
+            <div class="py-2 italic underline">
+              Information We Collect Automatically
+            </div>
+            <p class="py-2">
+              We collect Information in service of delivering the best possible
+              experience to you. As such, we may use your information to:
+            </p>
+            <ul style="list-style-type:circle;" class="ml-8 py-2">
+              <li>
+                ensure you are physically located at your checked-in location
+              </li>
+              <li>
+                enable you to enter into matching sessions in venues where
+                appropriate
+              </li>
+              <li>
+                facilitate matching between you and other users consistent with
+                your preferences
+              </li>
+              <li>personalize the in-app experience to your preferences</li>
+              <li>
+                contact you with relevant information regarding updates to the
+                Service
+              </li>
+              <li>
+                resolve customer service issues including disputes with other
+                users and issues with the Service
+              </li>
+              <li>
+                protect against any fraudulent activity or activity breaching
+                the Terms as agreed to between users and 4RL LLC
+              </li>
+              <li>
+                conduct research and analytics relevant to how users interact
+                with the Service
+              </li>
+              <li>
+                where we otherwise maintain legitimate interest in collecting
+                information. This may include direct marketing
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="font-medium">SHARING OF INFORMATION</div>
+          <div class="py-2">
+            Our policy is to not disclose your information, except in the
+            limited circumstances described here:
+          </div>
+          <div>
+            <div class="py-2 italic underline">Your Consent</div>
+            <p>If you consent, we may share your Information</p>
+          </div>
+          <div>
+            <div class="py-2 italic underline">Service Providers</div>
+            <p class="py-2">
+              We may provide information to certain third parties whom we have
+              engaged to perform functions and provide services to us.
+            </p>
+          </div>
+          <div>
+            <div class="py-2 italic underline">Payment Processing</div>
+            <p class="py-2">
+              To facilitate payments for our Premium Services and In-App
+              Purchases
+            </p>
+          </div>
+          <div>
+            <div class="py-2 italic underline">Legal</div>
+            <p class="py-2">
+              As outlined in the Terms of Service, we hold the 4RL community to
+              a high standard of conduct while using the App. As such, we will
+              cooperate with all third parties to enforce intellectual property
+              and other rights as outlined in the Terms. Additionally, we will
+              cooperate with law enforcement. This may include disclosure of
+              certain information as specified.
+            </p>
+          </div>
+          <div>
+            <div class="py-2 italic underline">Business Transfers</div>
+            <p class="py-2">
+              In the event of a change of ownership including a merger or
+              acquisition by another corporate entity, we may be required to
+              disclose your personal data.
+            </p>
+          </div>
+          <div>
+            <div class="py-2 italic underline">Aggregated Data</div>
+            <p class="py-2">
+              We may share aggregated information with third parties including
+              personal information (not including personal identifiable
+              information) together with other information including usage data
+              for industry analysis and demographic profiling.
+            </p>
+          </div><div>
+            <div class="py-2 italic underline">Other Users</div>
+            <p class="py-2">
+              Our App is designed to make it easy for you to connect with other
+              Users and to interact with them. You also understand that your
+              profile and other information you make available via the App,
+              including information you provide directly or indirectly may be
+              viewed and shared by others. When using 4RL, you should assume
+              that anything you post or submit on the App may be publicly
+              viewable and accessible.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="font-medium">MODIFYING YOUR REGISTRATION INFORMATION</div>
+          <p class="py-2">
+            You may access or modify your Information at any time after creating
+            your Account
+          </p>
+          <p class="py-2">
+            If you delete your account, we take a best efforts approach to make
+            sure your profile no longer remains viewable on the App. Upon
+            request of deletion, we immediately begin the process of deleting
+            your Account from our systems. We are not responsible for any
+            information, pictures, comments, or other content that is deleted
+            from our systems resulting from the deletion of your Account.
+          </p>
+          <p class="py-2">
+            To prevent abuse and/or misuse by a User following termination or
+            deletion of a profile/Account we shall retain such information as we
+            deem in our sole discretion may be necessary to ensure that User
+            does not open a new Account and profile in breach of our Terms and
+            Conditions of Use and to ensure compliance with all laws and
+            regulations.
+          </p>
+          <p class="py-2">
+            Warning: Even after you remove information from your profile or
+            delete your Account, copies of that information may still be
+            viewable and/or accessed to the extent such information has been
+            previously shared with others, or copied or stored by other Users or
+            to the extent such information has been shared with search engines.
+            We cannot control this, nor do we accept any liability for this. If
+            you have given third party applications or websites access to your
+            personal information they may retain such information to the extent
+            permitted under their terms of service or privacy policy.
+          </p>
+        </div>
+
+        <div>
+          <div class="font-medium">OUR POLICY TOWARDS AGE</div>
+          <p class="py-2">
+            We maintain a strict policy that users must be at least 18 years of
+            age to access the Service.
+          </p>
+          <p class="py-2">
+            We do not knowingly collect information about users under the age of
+            18. Consistent with this policy, we request that you do not submit
+            any information to us if you are under the age of 18. If we become
+            aware that a child, minor or anyone under the age of 18 has
+            registered with us and provided us with personal information, we
+            will take steps to terminate that person's registration and delete
+            their Information. If we do delete a profile because you violated
+            our no children rules, we may retain such information as we deem in
+            our sole discretion may be necessary to ensure that User does not
+            open a new Account and profile in breach of our Terms and Conditions
+            of Use and to ensure compliance with all laws and regulations.
+          </p>
+          <p class="py-2">
+            We maintain the right to modify this Policy at our discretion. Each
+            and every time we make such modifications, we will indicate at the
+            top of this page the date of the most recent version. By continuing
+            to access or use the App after those modifications become effective,
+            you agree to be bound by the revised Privacy Policy.
+          </p>
+        </div>
+      </div>
+    </div>
   </main>
 </Layout>
